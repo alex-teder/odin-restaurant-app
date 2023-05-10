@@ -41,7 +41,7 @@ function addItemToExport(item) {
 }
 
 const margherita = createMenuItem("Margherita", "მარგერიტა", "pizza", 23);
-margherita.setPic("./img/menu-items/margherita.webp");
+margherita.setPic("src/img/menu-items/margherita.webp");
 margherita.setDescriptionEng("Pizza Margherita.");
 margherita.setDescriptionGeo(
   "მომწვარი, ჰაეროვანი ცომი, პომიდვრის სოუსი და 100% ნამდვილი მოცარელა, ეკონომიის გარეშე!"

@@ -11,7 +11,7 @@
   &__title {
     max-width: 75%;
     margin-inline: auto;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
     text-align: center;
     color: white;
@@ -59,6 +59,10 @@
 @media (min-width: 600px) {
   .menu__container {
     max-width: 650px;
+  }
+
+  .menu__title {
+    font-size: 3rem;
   }
 }
 

@@ -26,13 +26,13 @@ export function displayMenu() {
   document.querySelector("#app").appendChild(main);
 
   const pizzaContainer = document.querySelector(
-    ".menu__section--pizza > menu__container"
+    ".menu__section--pizza > .menu__container"
   );
   const jujikaContainer = document.querySelector(
-    ".menu__section--jujika > menu__container"
+    ".menu__section--jujika > .menu__container"
   );
   const dessertContainer = document.querySelector(
-    ".menu__section--dessert > menu__container"
+    ".menu__section--dessert > .menu__container"
   );
 
   function cardHTML(item) {
