@@ -47,3 +47,17 @@ margherita.setDescriptionGeo(
   "მომწვარი, ჰაეროვანი ცომი, პომიდვრის სოუსი და 100% ნამდვილი მოცარელა, ეკონომიის გარეშე!"
 );
 addItemToExport(margherita);
+
+const prosciutto = createMenuItem("Prosciutto", "პროშუტო", "pizza", 28);
+prosciutto.setPic("src/img/menu-items/prosciutto.webp");
+prosciutto.setDescriptionGeo(
+  "მომწვარი, ჰაეროვანი ცომი, პომიდვრის სოუსი, ნამდვილი მოცარელა და „პროშუტო კრუდო“!"
+);
+addItemToExport(prosciutto);
+
+const salame = createMenuItem("Salame", "სალიამი", "pizza", 28);
+salame.setPic("src/img/menu-items/prosciutto.webp");
+salame.setDescriptionGeo(
+  "მომწვარი, ჰაეროვანი ცომი, პომიდვრის სოუსი, მოცარელა და სალიამი ნაპოლი!"
+);
+addItemToExport(salame);
