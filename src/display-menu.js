@@ -38,7 +38,7 @@ export function displayMenu() {
   function cardHTML(item) {
     return `
     <div class="card">
-      <img src="${item.pic}" alt="" class="card__image">
+      <img src="./${item.pic}.webp" alt="" class="card__image">
       <div class="card__content">
         <h4 class="card__title"><span class="geo">${item.nameGeo}</span> - ${item.nameEng}</h4>
         <p class="card__price">${item.price} GEL</p>

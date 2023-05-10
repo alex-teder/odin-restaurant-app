@@ -25,10 +25,10 @@ module.exports = {
         use: ["html-loader"],
       },
       {
-        test: /\.(svg|png|jpg|jpeg|gif|webp)$/i,
+        test: /\.(svg|png|jpe?g|gif|webp)$/i,
         type: "asset/resource",
         generator: {
-          filename: "[name][ext]",
+          filename: "[hash][ext]",
         },
       },
     ],

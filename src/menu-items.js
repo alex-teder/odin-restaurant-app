@@ -41,7 +41,7 @@ function addItemToExport(item) {
 }
 
 const margherita = createMenuItem("Margherita", "მარგერიტა", "pizza", 23);
-margherita.setPic("src/img/menu-items/margherita.webp");
+margherita.setPic("margherita");
 margherita.setDescriptionEng("Pizza Margherita.");
 margherita.setDescriptionGeo(
   "მომწვარი, ჰაეროვანი ცომი, პომიდვრის სოუსი და 100% ნამდვილი მოცარელა, ეკონომიის გარეშე!"
@@ -49,14 +49,14 @@ margherita.setDescriptionGeo(
 addItemToExport(margherita);
 
 const prosciutto = createMenuItem("Prosciutto", "პროშუტო", "pizza", 28);
-prosciutto.setPic("src/img/menu-items/prosciutto.webp");
+prosciutto.setPic("prosciutto");
 prosciutto.setDescriptionGeo(
   "მომწვარი, ჰაეროვანი ცომი, პომიდვრის სოუსი, ნამდვილი მოცარელა და „პროშუტო კრუდო“!"
 );
 addItemToExport(prosciutto);
 
 const salame = createMenuItem("Salame", "სალიამი", "pizza", 28);
-salame.setPic("src/img/menu-items/prosciutto.webp");
+salame.setPic("salame");
 salame.setDescriptionGeo(
   "მომწვარი, ჰაეროვანი ცომი, პომიდვრის სოუსი, მოცარელა და სალიამი ნაპოლი!"
 );
