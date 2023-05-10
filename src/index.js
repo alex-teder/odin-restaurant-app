@@ -1,6 +1,6 @@
 import "./scss/index.scss";
-const menuItemsImages = require.context(
-  "./img/menu-items/",
+const allImages = require.context(
+  "./img/",
   true,
   /\.(png|jpe?g|gif|svg|webp)$/
 );
