@@ -1,10 +1,11 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "production",
   output: {
-    filename: "bundle-[contenthash].js",
+    filename: "main-[contenthash].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -13,12 +14,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/template.html",
     }),
+    new MiniCssExtractPlugin({ filename: "[name]-[contenthash].css" }),
   ],
   module: {
     rules: [
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
         test: /\.html$/,
@@ -26,6 +28,13 @@ module.exports = {
       },
       {
         test: /\.(svg|png|jpe?g|gif|webp)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "[name][ext]",
+        },
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: "asset/resource",
         generator: {
           filename: "[name][ext]",

@@ -1,6 +1,7 @@
 import { pizzas, jujikas, desserts } from "./menu-items";
 
 export function displayMenu() {
+  document.querySelector("#app").innerHTML = "";
   const main = document.createElement("main");
   main.classList.add("menu");
   main.innerHTML = `

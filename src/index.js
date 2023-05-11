@@ -4,6 +4,7 @@ const allImages = require.context(
   true,
   /\.(png|jpe?g|gif|svg|webp)$/
 );
+const allFonts = require.context("./fonts/", true, /\.(woff2|ttf)$/);
 import { displayMenu } from "./display-menu";
 
 displayMenu();
