@@ -7,6 +7,8 @@ const allImages = require.context(
 const allFonts = require.context("./fonts/", true, /\.(woff2|ttf)$/);
 import { displayMenu } from "./display-menu";
 import { displayHomepage } from "./display-homepage";
+import { displayContacts } from "./display-contacts";
 
 // displayHomepage();
 // displayMenu();
+displayContacts();

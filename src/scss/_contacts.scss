@@ -1,0 +1,60 @@
+.contacts {
+  font-weight: 300;
+
+  &__container {
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+    width: min(75%, 500px);
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    margin-bottom: 1.5rem;
+  }
+
+  &__content {
+    padding-block: 1rem;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+    padding-block: 0.5rem;
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__links {
+    padding-top: 2rem;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    & a:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__social-logo {
+    display: inline;
+  }
+}
+
+
+
+@media (max-width: 599px) {
+  .contacts {
+    &__container {
+      padding-top: 1.5rem;
+    }
+  }
+}

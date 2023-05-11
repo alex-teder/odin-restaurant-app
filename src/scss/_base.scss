@@ -49,6 +49,12 @@ h6 {
   isolation: isolate;
 }
 
+a,
+a:visited,
+a:active {
+  color: inherit;
+}
+
 .button {
   cursor: pointer;
 }
