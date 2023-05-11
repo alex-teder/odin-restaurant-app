@@ -1,0 +1,125 @@
+.homepage {
+  color: #3a3a3a;
+
+  &__title {
+    line-height: normal;
+  }
+
+  &__subtext {
+    font-style: italic;
+  }
+
+  &__button {
+    border: none;
+    background: #df1d28;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.15);
+    color: white;
+    border-radius: 1.5em;
+    font-weight: 700;
+    padding-block: 0.5em;
+    padding-inline: 1.5em;
+  }
+}
+
+@media (max-width: 599px) {
+  .homepage {
+    &__container {
+      position: relative;
+      background: #ecedef;
+    }
+
+    &__content {
+      width: 100%;
+      background: rgb(236, 237, 239);
+      background: linear-gradient(180deg, rgba(236, 237, 239, 1) 75%, rgba(236, 237, 239, 0) 100%);
+      position: absolute;
+      padding-block: 2rem;
+      padding-left: 2rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+
+      z-index: 5;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__image-container {
+      position: relative;
+      top: 12.5rem;
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      z-index: 1;
+    }
+
+    &__image--small {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      z-index: 1;
+    }
+  }
+}
+
+
+@media (min-width: 600px) {
+  .homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+      // padding-block: 6rem;
+      padding-inline: 3rem;
+      max-width: 1200px;
+      position: relative;
+    }
+
+    &__content {
+      position: absolute;
+      top: 20%;
+      padding-left: 2rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    &__title {
+      font-size: 4rem;
+    }
+  }
+}
+
+@media (min-width: 950px) {
+  .homepage {
+    &__container {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    &__content {
+      font-size: 1.5rem;
+
+      gap: 2rem;
+    }
+
+    &__title {
+      font-size: 5rem;
+    }
+
+    &__image-container {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+}
