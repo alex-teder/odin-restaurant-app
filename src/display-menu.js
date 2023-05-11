@@ -39,9 +39,9 @@ export function displayMenu() {
   function cardHTML(item) {
     return `
     <div class="card">
-      <picture class="card__image-container">
-        <source srcset="${item.pic}.webp" type="image/webp" class="card__image">
-        <img src="./fallback-${item.pic}.jpg" alt="" class="card__image">
+      <picture class="card__image-container" width="300px" height="300px">
+        <source srcset="${item.pic}.webp" type="image/webp" class="card__image" width="300px" height="300px">
+        <img src="./fallback-${item.pic}.jpg" alt="" class="card__image" width="300px" height="300px">
       </picture>
       <div class="card__content">
         <h4 class="card__title"><span class="geo">${item.nameGeo}</span> - ${item.nameEng}</h4>
