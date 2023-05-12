@@ -94,6 +94,21 @@
   }
 }
 
+.card--new {
+  &::before {
+    content: "New";
+    display: inline-block;
+    position: absolute;
+    padding: 0.25em 0.5em;
+    margin-right: 0.5em;
+    background-color: #ea2a1f;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+  }
+}
+
 #back-to-top-btn {
   display: none;
   position: fixed;

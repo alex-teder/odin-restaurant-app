@@ -37,11 +37,15 @@ export function displayMenu() {
   );
 
   function cardHTML(item) {
+    let elementSelector = "card";
+    if (item.isNew === true) {
+      elementSelector = "card card--new";
+    }
     return `
-    <div class="card">
+    <div class="${elementSelector}">
       <picture class="card__image-container" width="300px" height="300px">
         <source srcset="${item.pic}.webp" type="image/webp" class="card__image" width="300px" height="300px">
-        <img src="./fallback-${item.pic}.jpg" alt="" class="card__image" width="300px" height="300px">
+        <img src="./fallback-${item.pic}.jpg" alt="pizza" class="card__image" width="300px" height="300px">
       </picture>
       <div class="card__content">
         <h4 class="card__title">${item.nameGeo} - ${item.nameEng}</h4>

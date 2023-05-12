@@ -9,6 +9,7 @@ function createMenuItem(nameEng, nameGeo, type, price) {
   };
   let descriptionEng = "";
   let descriptionGeo = "";
+  let isNew = false;
   const setDescriptionEng = function (desc) {
     this.descriptionEng = desc;
   };
@@ -24,6 +25,7 @@ function createMenuItem(nameEng, nameGeo, type, price) {
     setPic,
     descriptionEng,
     descriptionGeo,
+    isNew,
     setDescriptionEng,
     setDescriptionGeo,
   };
@@ -64,6 +66,7 @@ addItemToExport(salame);
 
 const panciatella = createMenuItem("Panciatella", "პანჩატელა", "pizza", 28);
 panciatella.setPic("panciatella");
+panciatella.isNew = true;
 panciatella.setDescriptionGeo(
   "მომწვარი, ჰაეროვანი ცომი, პომიდვრის სოუსი,შებოლილი პანჩეტა (ბეკონი), დაფქული ყავა, ყველი სტრაჩატელა, რუკოლა."
 );
@@ -140,6 +143,7 @@ const jujikaSalmon = createMenuItem(
   25
 );
 jujikaSalmon.setPic("jujika-salmon");
+jujikaSalmon.isNew = true;
 jujikaSalmon.setDescriptionGeo(
   "ზეთით და ორეგანოთი გამომცხვარი თხელი, თბილი და ხრაჭუნა ცომი, კრემ-ყველი, ჩვენ მიერ მომზადებული პომიდვრის ტკბილ-ცხარე ჯემი, კამის პასტა რუკოლა და შებოლილი ორაგული."
 );
