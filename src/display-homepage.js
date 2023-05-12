@@ -7,7 +7,7 @@ export function displayHomepage() {
     <div class="homepage__content">
       <h1 class="homepage__title">PAZZA<br>პაცცა</h1>
       <p class="homepage__subtext">Try the best pizza in Tbilisi</p>
-      <button class="button homepage__button">Browse menu</button>
+      <button class="button homepage__button" id="browse-menu">Browse menu</button>
       <p class="homepage__address">10, P. Ingorokva, Tbilisi<br>18, I. Gagarini, Tbilisi</p>
     </div>
     <picture class="homepage__image-container">
