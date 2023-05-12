@@ -15,10 +15,10 @@ export function displayContacts() {
     <div class="contacts__links">
       <p class="contacts__link contacts__text"><img height="20px" width="20px" src="./icon-facebook.svg"
           alt="facebook logo" class="contacts__social-logo"><a
-          href="https://www.facebook.com/pazzageorgia">facebook.com/pazzageorgia</a></p>
+          href="https://www.facebook.com/pazzageorgia" target="_blank" rel="noopener">facebook.com/pazzageorgia</a></p>
       <p class="contacts__link contacts__text"><img height="20px" width="20px" src="./icon-instagram.svg"
           alt="instagram logo" class="contacts__social-logo"><a
-          href="https://www.instagram.com/pazzageo/">instagram.com/pazzageo</a>
+          href="https://www.instagram.com/pazzageo/" target="_blank" rel="noopener">instagram.com/pazzageo</a>
       </p>
     </div>
   </div>

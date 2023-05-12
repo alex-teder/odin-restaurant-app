@@ -11,7 +11,7 @@ export function displayHomepage() {
       <p class="homepage__address">10, P. Ingorokva, Tbilisi<br>18, I. Gagarini, Tbilisi</p>
     </div>
     <picture class="homepage__image-container">
-      <source media="(min-width: 600px)" srcset="./pizza-pic.jpg" class="homepage__image--large">
+      <source media="(min-width: 600px)" srcset="./pizza-pic-new.jpeg" class="homepage__image--large">
       <img src="./pizza-pic-vertical.jpg" alt="" class="homepage__image--small">
     </picture>
   </div>

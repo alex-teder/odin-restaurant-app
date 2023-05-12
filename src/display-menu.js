@@ -44,9 +44,9 @@ export function displayMenu() {
         <img src="./fallback-${item.pic}.jpg" alt="" class="card__image" width="300px" height="300px">
       </picture>
       <div class="card__content">
-        <h4 class="card__title"><span class="geo">${item.nameGeo}</span> - ${item.nameEng}</h4>
+        <h4 class="card__title">${item.nameGeo} - ${item.nameEng}</h4>
         <p class="card__price">${item.price} GEL</p>
-        <p class="card__text"><span class="geo">${item.descriptionGeo}</span></p>
+        <p class="card__text">${item.descriptionGeo}</p>
       </div>
     </div>
   `;
@@ -61,4 +61,29 @@ export function displayMenu() {
   desserts.forEach((item) => {
     dessertContainer.innerHTML += cardHTML(item);
   });
+
+  //creating back-to-top-button element
+  const backToTopEl = document.createElement("button");
+  backToTopEl.id = "back-to-top-btn";
+  backToTopEl.classList.add("button");
+  document.querySelector("main.menu").appendChild(backToTopEl);
+
+  //selecting back-to-top button and adding behaviour
+  const backToTopButton = document.querySelector("#back-to-top-btn");
+
+  window.onscroll = function () {
+    if (
+      document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200
+    ) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  };
+
+  backToTopButton.onclick = function () {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
 }
