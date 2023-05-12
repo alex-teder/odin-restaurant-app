@@ -62,3 +62,18 @@ a:active {
 body {
   background: #5a5a5a;
 }
+
+main {
+  opacity: 0;
+  animation: fade-in 0.1s ease-in forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
