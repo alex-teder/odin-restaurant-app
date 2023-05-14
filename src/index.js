@@ -14,7 +14,11 @@ displayHomepage();
 
 function buttonHandler(event) {
   if (event.target.classList.contains("button")) {
-    if (event.target.id === "home-btn" && currentPage !== 1) {
+    if (
+      (event.target.id === "home-btn" ||
+        event.target.classList.contains("header__logo")) &&
+      currentPage !== 1
+    ) {
       currentPage = 1;
       displayHomepage();
     } else if (
