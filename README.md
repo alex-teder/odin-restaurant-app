@@ -1,7 +1,7 @@
 # Restaraunt page
 
 ## Live link:
-https://teder-kedr.github.io/odin-restaurant-app/
+https://alex-teder.github.io/odin-restaurant-app/
 
 ## Overview
 A simple promo page for one of my favorite pizza places. 
